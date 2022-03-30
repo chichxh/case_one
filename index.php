@@ -56,7 +56,10 @@
 	</div>
 	<div class="container mt-5">
 		<div class="row">
-			
+			<h1>Карта</h1>
+			<div style="width: 100px; height: 100px; color: red;">
+				
+			</div>
 		</div>
 	</div>
 
