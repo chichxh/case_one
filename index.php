@@ -65,6 +65,24 @@
 			</div>
 		</a>
 	</div>
+	<!-- Услуги -->
+	<div class="container mt-5">
+		<div class="row">
+			<h1 class="font-mnt"><b>Услуги</b></h1>
+			<p class="font-jt">Наши возможности</p>
+		</div>
+		<div class="row justify-content-between">
+			<div class="col-3">
+				<p>Лошадиная ферма</p>
+			</div>
+			<div class="col-3">
+				<p>Туртреки</p>
+			</div>
+			<div class="col-3">
+				<p>Аренда кафе</p>
+			</div>
+		</div>
+	</div>
 
 
 

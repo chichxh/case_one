@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Карта</title>
+	<title>Покровск</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -11,11 +11,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container-fluid">
-		<a href="locality/pokr.php"><div style="width: 100px; height: 100px; background-color: black;"></div></a>
+	<div class="container">
+		<div class="row">
+			<h1 class="font-mnt">г. Покровск</h1>
+			<p>Дата основания: <br>
+				Основатель: <br>
+				Инфа крч		
+			</p> 
+		</div>
 	</div>
-
-
 
 
 
