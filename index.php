@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ямщицкое подворье</title>
+	<title>Ямщицкие подворья</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -14,13 +14,13 @@
 	<!-- Хидер -->
 	<nav class="navbar navbar-light navbar-expand-lg bg-light font-mnt">
 	  <div class="container">
-	    <a class="navbar-brand" href="#">Ямщицкое подворье</a>
+	    <a class="navbar-brand" href="#">Ямщицкия подворья</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 	      <div class="offcanvas-header">
-	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ямщицкое подворье</h5>
+	        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ямщицкие подворья</h5>
 	        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	      </div>
 	      <div class="offcanvas-body">
@@ -53,15 +53,19 @@
 				<p class="font-jt">Интерактивная карта и много возможностей для изучения жизни и истории ямщиков</p>
 			</div>
 		</div>
-	</div>
-	<div class="container mt-5">
-		<div class="row">
-			<h1>Карта</h1>
-			<div style="width: 100px; height: 100px; color: red;">
-				
-			</div>
+		<div class="row mt-5">
+			<h1 class="font-mnt"><b>Карта</b></h1>
+			<p class="font-jt">Узнайте где и когда</p>
 		</div>
 	</div>
+	<div class="container-fluid">
+		<a href="map.php">
+			<div class="row">
+				<img src="img/mapimg.png">
+			</div>
+		</a>
+	</div>
+
 
 
 
