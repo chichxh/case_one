@@ -1,0 +1,9 @@
+.font-mnt {
+	font-family: Montserrat, Arial, sans-serif;
+}
+.font-jt {
+	font-family: Jost, Arial, sans-serif;
+}
+.navbar-light .navbar-toggler {
+	border-color: transparent;
+}
