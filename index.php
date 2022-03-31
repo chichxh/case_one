@@ -7,8 +7,10 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat+Alternates&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="uid.min.css">
+    <script type="text/javascript" src="uid.min.js"></script>
 </head>
 <body>
 	<!-- Хидер -->
@@ -40,68 +42,93 @@
 				        <li class="nav-item">
 				            <a class="nav-link" href="#">Контакты</a>
 				        </li>
+				        <li class="nav-item">
+				            <a class="nav-link" href="login.php">Войти</a>
+				        </li>
 			        </ul>
 			    </div>
 		    </div>
 		</div>
 	</nav>
 	<!-- Карта -->
-	<div class="container mt-5">
+	<div class="container-fluid mt-5 bg">
 		<div class="row">
-			<div class="col-12">
-				<h1 class="font-mnt"><b>История ямщиков у тебя в кармане</b></h1>
-				<p class="font-jt">Интерактивная карта и много возможностей для изучения жизни и истории ямщиков</p>
+			<div class="col-10">
+				<h1 class="font-mnt"><b>История ямщиков Хангаласского района</b> прямо у тебя в кармане</h1>
+			</div>
+			<div class="col-5">
+				<button class="btn">Кто такие ямщики?</button>
 			</div>
 		</div>
-
-		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <div class="carousel-caption d-none d-md-block">
-			        <h5>First slide label</h5>
-			        <p>Some representative placeholder content for the first slide.</p>
-			      </div>
-			    </div>
-			    <div class="carousel-item">
-			      <div class="carousel-caption d-none d-md-block">
-			        <h5>Second slide label</h5>
-			        <p>Some representative placeholder content for the second slide.</p>
-			      </div>
-			    </div>
-			    <div class="carousel-item">
-			      <div class="carousel-caption d-none d-md-block">
-			        <h5>Third slide label</h5>
-			        <p>Some representative placeholder content for the third slide.</p>
-			      </div>
-			    </div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="visually-hidden">Next</span>
-			</button>
-		</div>
-
+	</div>
+	<div class="container">
 		<div class="row mt-5">
 			<h1 class="font-mnt"><b>Карта</b></h1>
 			<p class="font-jt">Узнайте где и когда</p>
 		</div>
 	</div>
 	<div class="container-fluid">
-		<a href="map.php">
+		<!-- <a href="map.php"> -->
 			<div class="row">
-				<img src="img/mapimg.png">
+				<div class="overflow">
+					<img src="img/map.png">
+				</div>
 			</div>
-		</a>
+		<!-- </a> -->
 	</div>
+	<!-- Новости -->
+	<div class="container">
+		<div class="row">
+			<h1 class="font-mnt"><b>Новости</b></h1>
+			<p class="font-jt">Будь в курсе всех событий</p>
+		</div>
+		<div class="row">
+			<div class="slider">
+		        <div class="slider__wrapper">
+		        	<div class="slider__items">
+		            	<div class="slider__item">
+		            		<div class="row">
+		            			<div class="col-5">
+		            				<img src="img/news1.png">
+		            			</div>
+		            			<div class="col-7">
+		            				<p>20.09.22</p>
+		            				<h2><b>Новое меню кафе</b></h2>
+		            				<p>Теперь в нашем кафе вы сможете попробывать ямщиские блюда</p>
+		            			</div>
+		            		</div>
+		            		<div class="row">
+		            			<div class="col-7">
+		            				<p>20.09.22</p>
+		            				<h2><b>Новое меню кафе</b></h2>
+		            				<p>Теперь в нашем кафе вы сможете попробывать ямщиские блюда</p>
+		            			</div>
+		            			<div class="col-5">
+		            				<img src="img/news1.png">
+		            			</div>
+		            		</div>
+		          		</div>
+			          	<div class="slider__item">
+		            		<div class="row">
+		            			<div class="col-5">
+		            				<img src="img/news1.png">
+		            			</div>
+		            			<div class="col-7">
+		            				<p>20.09.22</p>
+		            				<h2><b>Новое меню кафе</b></h2>
+		            				<p>Теперь в нашем кафе вы сможете попробывать ямщиские блюда</p>
+		            			</div>
+		            		</div>
+		            		<div class="row">
+		            			
+		            		</div>
+		          		</div>
+			        </div>
+		        </div>
+		    </div>		
+		</div>
+	</div>
+
 	<!-- Услуги -->
 	<div class="container mt-5">
 		<div class="row">
