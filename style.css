@@ -1,4 +1,4 @@
-.font-mnt {
+body {
 	font-family: 'Montserrat Alternates', Arial, sans-serif;
 }
 .font-jt {
@@ -18,4 +18,7 @@
 	box-sizing: border-box;
 	border-radius: 131.815px;
 	padding: 10px 12px;
+}
+hr {
+	size: 5;
 }

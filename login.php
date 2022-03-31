@@ -57,13 +57,6 @@ if(isset($_POST['loginSub'])) {
                     <button type="submit" class="btn btn-spec" name="loginSub">Войти</button>
                 </div>
             </form>
-            
-            <div class="row mb-3 px-3 text-center">
-                <a href="#"><button type="button" class="btn btn-spec">Войти через Google</button></a>
-            </div>
-            <div class="row mb-3 px-3 text-center">
-                <a href="#">Забыл пароль</a>
-            </div>
         </div>
     </div>
 

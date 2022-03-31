@@ -8,9 +8,35 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="uid.min.css">
     <script type="text/javascript" src="uid.min.js"></script>
+    <style type="text/css">
+    	body {
+			font-family: 'Montserrat Alternates', Arial, sans-serif;
+		}
+		.font-jt {
+			font-family: Jost, Arial, sans-serif;
+		}
+		.navbar-light .navbar-toggler {
+			border-color: transparent;
+		}
+		.overflow {
+			overflow: scroll;
+		}
+		.bg {
+			background-image: url(img/backgr.png);
+			background-size: cover;
+		}
+		.btn {
+			border: 2px solid #171717;
+			box-sizing: border-box;
+			border-radius: 131.815px;
+			padding: 10px 12px;
+		}
+		hr {
+			opacity: 100;
+		}
+    </style>
 </head>
 <body>
 	<!-- Хидер -->
@@ -34,16 +60,19 @@
 				            <a class="nav-link" href="#">Новости</a>
 				        </li>
 				        <li class="nav-item">
-				            <a class="nav-link" href="#">Мерч</a>
+				            <a class="nav-link" href="#">Гостинница</a>
 				        </li>
 				        <li class="nav-item">
-				            <a class="nav-link" href="#">Музеи</a>
+				            <a class="nav-link" href="#">Лошадиная ферма</a>
 				        </li>
 				        <li class="nav-item">
-				            <a class="nav-link" href="#">Контакты</a>
+				            <a class="nav-link" href="#">Тур-треки</a>
 				        </li>
 				        <li class="nav-item">
-				            <a class="nav-link" href="login.php">Войти</a>
+				            <a class="nav-link" href="#">Аренда кафе</a>
+				        </li>
+				        <li class="nav-item">
+				            <a class="nav-link" href="login.php">Мои достижения</a>
 				        </li>
 			        </ul>
 			    </div>
@@ -51,7 +80,7 @@
 		</div>
 	</nav>
 	<!-- Карта -->
-	<div class="container-fluid mt-5 bg">
+	<div class="container-fluid mt-5 bg pb-4">
 		<div class="row">
 			<div class="col-10">
 				<h1 class="font-mnt"><b>История ямщиков Хангаласского района</b> прямо у тебя в кармане</h1>
@@ -116,10 +145,11 @@
 		const punct = document.getElementsByClassName('punct')
 		function startAlert(station) {
 			let pId = station.id
-			hStat.textContent = puncts[parseInt(pId)]
-			const element = punct.namedItem(parseInt(pId))
-			console.log(element)
-			element.fill = '#DE541E'
+			hStat.textContent = puncts[pId]
+			// let element = punct.namedItem(pId)
+			// console.log(pId)
+			// console.log(element.innerText)
+			// element.fill = '#DE541E'
 		}
 	</script>
 	<!-- Новости -->
@@ -174,42 +204,107 @@
 		    </div> -->		
 		</div>
 	</div>
-
-	<!-- Услуги -->
-	<div class="container mt-5">
+	<!-- Смотрите также -->
+	<div class="container">
 		<div class="row">
-			<h1 class="font-mnt"><b>Услуги</b></h1>
-			<p class="font-jt">Наши возможности</p>
+			<h1 class="font-mnt"><b>Смотрите также</b></h1>
 		</div>
 		<div class="row justify-content-between">
-			<div class="col-4">
-				<div class="card">
-					<div class="card-body">
-					    <h5 class="card-title">Лошадиная ферма</h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn">Узнать больше</a>
-					</div>
-				</div>
+			<div id="horse" class="col-4" onclick="hideOne()">
+				<img src="img/horse.png">
+				<hr size="8" color="black">
+				<h2>Подари радость лошадке</h2>
 			</div>
-			<div class="col-4">
-				<div class="card">
-					<div class="card-body">
-					    <h5 class="card-title">Туртрекер</h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn">Узнать больше</a>
-					</div>
-				</div>
+			<div id="bell" class="col-4" onclick="hideTwo()">
+				<img src="img/bell.png">
+				<hr size="8" color="#000">
+				<h2>Изучи город Покровск и не только</h2>
 			</div>
-			<div class="col-4">
-				<div class="card">
-					<div class="card-body">
-					    <h5 class="card-title">Аренда кафе</h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn">Узнать больше</a>
-					</div>
+			<div id="snow" class="col-4" onclick="hideThree()">
+				<img src="img/snow.png">
+				<hr size="8" color="#000">
+				<h2>Органи зуй свой праздник в нашем кафе</h2>
+			</div>
+			<div id="horseDiv" class="col-8" style="display: none">
+				<div class="d-flex">
+					<h1>Лошадиная ферма</h1>
+					<button class="btn" onclick="closeDiv()">X</button>
 				</div>
+				<p>Место для всей семьи. Вы можете покормить лошадей, покататься на транспорте ямщиков</p>
+				<button class="btn">Перейти</button>
+			</div>
+			<div id="bellDiv" class="col-8" style="display: none">
+				<div class="d-flex">
+					<h1>Туртрек</h1>
+					<button class="btn" onclick="closeDiv()">X</button>
+				</div>
+				<p>Этот туртрек поможет вам лучше понять историю своего края. Впереди еще больше трекеров </p>
+				<button class="btn">Перейти</button>
+			</div>
+			<div id="snowDiv" class="col-8" style="display: none">
+				<div class="d-flex">
+					<p>Отправь свой данные, и мы с тобой свяжемся</p>
+					<button class="btn" onclick="closeDiv()">X</button>
+				</div>
+				<form>
+					<div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">ФИО</label>
+					    <input type="text" class="form-control" id="exampleInputEmail1">
+					</div>
+					<div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Телефон</label>
+					    <input type="text" class="form-control" id="exampleInputEmail1">
+					</div>
+					<div class="mb-3">
+					    <label for="exampleInputEmail1" class="form-label">Комментарий</label>
+					    <input type="text" class="form-control" id="exampleInputEmail1">
+					</div>
+					<button type="submit" class="btn">Отправить!</button>
+				</form>
 			</div>
 		</div>
+
+		<script type="text/javascript">
+			let horse = document.getElementById('horse')
+			let bell = document.getElementById('bell')
+			let snow = document.getElementById('snow')
+			let horseDiv = document.getElementById('horseDiv')
+			let bellDiv = document.getElementById('bellDiv')
+			let snowDiv = document.getElementById('snowDiv')
+
+			function hideOne() {
+				horse.style.display = 'block'
+				horseDiv.style.display = 'block'
+				bell.style.display = 'none'
+				bellDiv.style.display = 'none'
+				snow.style.display = 'none'
+				snowDiv.style.display = 'none'
+			}
+			function hideTwo() {
+				horse.style.display = 'none'
+				horseDiv.style.display = 'none'
+				bell.style.display = 'block'
+				bellDiv.style.display = 'block'
+				snow.style.display = 'none'
+				snowDiv.style.display = 'none'
+			}
+			function hideThree() {
+				horse.style.display = 'none'
+				horseDiv.style.display = 'none'
+				bell.style.display = 'none'
+				bellDiv.style.display = 'none'
+				snow.style.display = 'block'
+				snowDiv.style.display = 'block'
+			}
+			function closeDiv() {
+				horse.style.display = 'block'
+				horseDiv.style.display = 'none'
+				bell.style.display = 'block'
+				bellDiv.style.display = 'none'
+				snow.style.display = 'block'
+				snowDiv.style.display = 'none'
+			}
+		</script>
 	</div>
 
 
