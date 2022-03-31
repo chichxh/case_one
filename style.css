@@ -9,7 +9,6 @@
 }
 .overflow {
 	overflow: scroll;
-	width: auto;
 }
 .bg {
 	background-image: url(img/bg.png);
