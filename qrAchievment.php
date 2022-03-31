@@ -8,8 +8,7 @@ $name = $_SESSION['name'];
 $surname = $_SESSION['surname'];
 $email = $_SESSION['email'];
 $achId = $_SESSION['achId'];
-
-$achIdArray = explode(" ", $achId);
+$achIdArray = explode(",", $achId);
 
 if(isset($_POST['qr'])) {
 	$qrCode = $_POST['qr'];
@@ -18,12 +17,10 @@ if(isset($_POST['qr'])) {
     $achievmentId = (int)$data['id'];
     $achievmentName = $data['achievment'];
 
-    // $query = mysqli_query($link,"SELECT * FROM users WHERE id = '$id");
-    // $data = mysqli_fetch_assoc($query);
-    // $achId = [];
     $achIdArray[] = $achievmentId;
+    $achId = implode(",", $achIdArray);
 
-	$query = "UPDATE users UPDATE achId = $achIdArray WHERE id = '$id";
+	$query = "UPDATE users SET achId = '$achId' WHERE id = $id";
 	$res = mysqli_query($link, $query);
 
     if ($conn->query($query) === TRUE) {
@@ -32,6 +29,4 @@ if(isset($_POST['qr'])) {
 	    echo "Ошибка: " . $sql . "<br>" . $conn->error;
 	}
 }
-echo $achievmentId;
-    echo $achievmentName;
 ?>

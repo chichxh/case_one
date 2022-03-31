@@ -11,7 +11,7 @@ if(isset($_POST['loginSub'])) {
     {
         header('Location: lk.php'); 
         session_start();
-        $_SESSION['user_id'] = $data['id'];
+        $_SESSION['id'] = (int)$data['id'];
         $_SESSION['name'] = $data['name'];
         $_SESSION['surname'] = $data['surname'];
         $_SESSION['email'] = $data['email'];

@@ -1,15 +1,17 @@
 <?php
 require 'connect.php';
-session_start();
-$query = mysqli_query($link,"SELECT * FROM achievments");
-$data = mysqli_fetch_assoc($query);
-$qrCode = (int)$data['qr'];
 
 session_start();
-$id = $_SESSION['id'];
+$id = (int)$_SESSION['id'];
 $name = $_SESSION['name'];
 $surname = $_SESSION['surname'];
 $email = $_SESSION['email'];
+
+$query = mysqli_query($link,"SELECT * FROM users WHERE id = $id");
+$data = mysqli_fetch_assoc($query);
+$achId = $data['achId'];
+
+$query = mysqli_query($link,"SELECT * FROM achievments");
 ?>
 
 
@@ -44,6 +46,18 @@ $email = $_SESSION['email'];
 			</form>
 			<button id="start_button" disabled="true" onclick="startScan()" class="btn-spec">Повторное сканирование</button>
 	    </div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<p>Сделаны ачивки: <?php echo $achId; ?></p>
+		</div>
+		<div class="row">
+			<?php while ($row = mysqli_fetch_array($query)): ?>
+				<p><?= $row['id']; ?> <?= $row['achievment']; ?></p>
+				<br>
+			<?php endwhile; ?>
+		</div>
 	</div>
 
 	<script>
