@@ -165,7 +165,7 @@
 		            				<p>20.09.22</p>
 		            				<div class="d-flex justify-content-around"><h3>Новое меню кафе</h3><img src="img/strR.png"></div>
 		            				<p>Теперь в нашем кафе вы сможете попробывать ямщцкие блюда</p>
-		            				<button class="btn btn-circ"><img src="img/arrow.png"></button>
+		            				<!-- <button class="btn btn-circ"><img src="img/arrow.png"></button> -->
 		            			</div>
 		            		</div>
 		            		<div class="row">
@@ -176,7 +176,7 @@
 		            				<p>20.09.22</p>
 		            				<div class="d-flex justify-content-around"><h3>Фестиваль в Покровске</h3><img src="img/strR.png"></div>
 		            				<p>Ежегодный фестиваль “Ямщицкие блюда”</p>
-		            				<button class="btn btn-circ"><img src="img/arrow.png"></button>
+		            				<!-- <button class="btn btn-circ"><img src="img/arrow.png"></button> -->
 		            			</div>
 		            		</div>
 		          		</div>
@@ -189,7 +189,7 @@
 		            				<p>20.09.22</p>
 		            				<div class="d-flex justify-content-around"><h3>Новое меню кафе</h3><img src="img/strR.png"></div>
 		            				<p>Теперь в нашем кафе вы сможете попробывать ямщицкие блюда</p>
-		            				<button class="btn btn-circ"><img src="img/arrow.png"></button>
+		            				<!-- <button class="btn btn-circ"><img src="img/arrow.png"></button> -->
 		            			</div>
 		            		</div>
 		            		<div class="row">
@@ -200,7 +200,7 @@
 		            				<p>20.09.22</p>
 		            				<div class="d-flex justify-content-around"><h3>Фестиваль в Покровске</h3><img src="img/strR.png"></div>
 		            				<p>Ежегодный фестиваль “Ямщицкие блюда”</p>
-		            				<button class="btn btn-circ"><img src="img/arrow.png"></button>
+		            				<!-- <button class="btn btn-circ"><img src="img/arrow.png"></button> -->
 		            			</div>
 		            		</div>
 		          		</div>
