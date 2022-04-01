@@ -19,8 +19,34 @@
 			<p class="font-jt">Гостиница выполнена в старо-русском стиле, однако образ жизни Ленских ямщиков постоянно смешивался с местным и вы сможете проследить это в интерьере</p>
 		</div>
 		<div class="row">
-			<div class="col-6">
-				<img src="img/">
+			<div class="col-6 text-center">
+				<img src="img/ht1.png">
+			</div>
+			<div class="col-6 text-center">
+				<img src="img/ht2.png">
+			</div>
+		</div>
+		<div class="row mt-3">
+			<div class="col-6 text-center">
+				<img src="img/ht3.png">
+			</div>
+			<div class="col-6 text-center">
+				<h3>Что в гостинице?</h3>
+			</div>
+		</div>
+		<div class="row text-end justify-content-end mt-5">
+			<div class="col-8">
+				<p>Аутентичные кровати с высокими изголовьями и необычные предметы интерьера</p>
+			</div>
+		</div>
+		<div class="row text-end justify-content-end">
+			<div class="col-8">
+				<p>Дома скопированные с настоящих ямщицких жилищ </p>
+			</div>
+		</div>
+		<div class="row text-end justify-content-end mb-5">
+			<div class="col-8">
+				<p>Или вы можете остановится в обычном современном номере, который понравится каждому!</p>
 			</div>
 		</div>
 	</div>
