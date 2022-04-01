@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light navbar-expand-lg bg-light font-mnt">
+<nav class="navbar navbar-light navbar-expand-lg bg-transparent font-mnt">
 	<div class="container">
 	    <a class="navbar-brand" href="index.php"><img src="img/logos.png" width="120"></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -21,13 +21,13 @@
 			            <a class="nav-link" href="hotel.php">Гостинница</a>
 			        </li>
 			        <li class="nav-item">
-			            <a class="nav-link" href="#">Лошадиная ферма</a>
+			            <a class="nav-link" href="farm.php">Лошадиная ферма</a>
 			        </li>
 			        <li class="nav-item">
-			            <a class="nav-link" href="#">Тур-треки</a>
+			            <a class="nav-link" href="tour.php">Тур-треки</a>
 			        </li>
 			        <li class="nav-item">
-			            <a class="nav-link" href="#">Аренда кафе</a>
+			            <a class="nav-link" href="cafe.php">Аренда кафе</a>
 			        </li>
 			        <li class="nav-item">
 			            <a class="nav-link" href="login.php">Мои достижения</a>

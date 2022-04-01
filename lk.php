@@ -24,7 +24,7 @@ $query = mysqli_query($link,"SELECT * FROM achievments");
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat+Alternates&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="qr-scanner.umd.min.js"></script>
 </head>
@@ -49,13 +49,13 @@ $query = mysqli_query($link,"SELECT * FROM achievments");
 				    <p>Если вы нашли спрятанный QR-код, то наведите камеру на него</p>
 				    <br>
 				</div>
-			    <div>
+			    <div class="d-flex justify-content-around">
 			    	<form>
 					    <input type="text" name="qr" class="input" style="display: none;">
 					    <!-- <input type="submit" id="send_button" formmethod="post" disabled="true" class="btn-spec"> -->
 					    <button type="submit" id="send_button" formmethod="post" disabled="true" class="btn">Отсканировать!</button>
 					</form>
-					<button id="start_button" disabled="true" onclick="startScan()" class="btn mt-3">Повторное сканирование</button>
+					<button id="start_button" disabled="true" onclick="startScan()" class="btn text-center">Повторное сканирование</button>
 			    </div>
 			</div>
 		</div>

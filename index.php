@@ -57,6 +57,18 @@
 			background-color: #005252;
 			color: #fff;
 		}
+		.mx-img {
+			max-width: 100%;
+		}
+		@media(min-width: 700px) {
+			.budk {
+				width: 1034px;
+			}
+		@media(min-width: 500px) {
+			.budk {
+				width: 360px;
+			}
+		}
     </style>
 </head>
 <body>
@@ -65,10 +77,10 @@
 	<!-- Карта -->
 	<div class="container-fluid mt-5 bg pb-4">
 		<div class="d-flex justify-content-center">
-			<div class="col-9 font-mnt">
-				<div class="d-flex justify-content-end"><img src="img/strL.png"><h1><b>История</b></h1></div>
-				<h1 class="text-end"><b>ямщиков</b></h1>
-				<h1 class="text-end"><b>Хангаласского</b></h1>
+			<div class="col-6 font-mnt">
+				<div class="d-flex justify-content-center"><img src="img/strL.png"><h1><b>История</b></h1></div>
+				<h1 class="text-center"><b>ямщиков</b></h1>
+				<h1 class="text-center"><b>Хангаласского</b></h1>
 				<div class="d-flex justify-content-center"><h1><b>райнона</b> прямо</h1><img src="img/strR.png"></div>
 				<h1 class="text-center">у тебя в кармане</h1>
 			</div>
@@ -79,6 +91,7 @@
 			<hr>
 		</div>
 	</div>
+	<hr>
 	<div class="container">
 		<div class="row mt-5">
 			<h1 class="font-mnt"><b>Места остановки ямщиков</b></h1>
@@ -129,7 +142,6 @@
 			hStat.textContent = puncts[pId]
 			pStat.textContent = punctsText[pId]
 			let element = punct.namedItem(pId)
-			console.log(element)
 			element.style.backgroundColor = '#DE541E'
 		}
 	</script>
@@ -146,8 +158,8 @@
 		        	<div class="slider__items">
 		            	<div class="slider__item">
 		            		<div class="row mb-2">
-		            			<div class="col-3 px-0">
-		            				<img src="img/news1.png" width="100%">
+		            			<div class="col-3 px-0 d-flex justify-content-end">
+		            				<img src="img/news1.png" class="mx-img">
 		            			</div>
 		            			<div class="col-9">
 		            				<p>20.09.22</p>
@@ -157,8 +169,8 @@
 		            			</div>
 		            		</div>
 		            		<div class="row">
-		            			<div class="col-3 px-0">
-		            				<img src="img/news2.png" width="100%">
+		            			<div class="col-3 px-0 d-flex justify-content-end">
+		            				<img src="img/news2.png" class="mx-img">
 		            			</div>
 		            			<div class="col-9">
 		            				<p>20.09.22</p>
@@ -169,9 +181,9 @@
 		            		</div>
 		          		</div>
 			          	<div class="slider__item">
-			          		<div class="row  mb-2">
-		            			<div class="col-3 px-0">
-		            				<img src="img/news2.png" width="100%">
+			          		<div class="row mb-2 justify-content-around">
+		            			<div class="col-3 px-0 d-flex justify-content-end">
+		            				<img src="img/news2.png" class="mx-img">
 		            			</div>
 		            			<div class="col-9">
 		            				<p>20.09.22</p>
@@ -181,8 +193,8 @@
 		            			</div>
 		            		</div>
 		            		<div class="row">
-		            			<div class="col-3 px-0">
-		            				<img src="img/news1.png" width="100%">
+		            			<div class="col-3 px-0 d-flex justify-content-end">
+		            				<img src="img/news1.png" class="mx-img">
 		            			</div>
 		            			<div class="col-9">
 		            				<p>20.09.22</p>
@@ -206,32 +218,58 @@
 				<p class="font-jt">Ямщицкое подворье может дать вам не только историю</p>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-5">
-				
+		<div class="row mb-4">
+			<div class="col-5 d-flex justify-content-end">
+				<img src="img/farm.png" class="mx-img">
 			</div>
 			<div class="col-7">
-				
+				<h3><b>Лошадиная ферма</b></h3>
+				<p>Место для всей семьи. <br> Вы можете покормить лошадей, <br> покататься на транспорте ямщиков</p>
+				<a href="farm.php"><button class="btn btn-circ"><img src="img/arrow.png"></button></a>
 			</div>
 		</div>
-	
-
+		<div class="row text-end mb-4">
+			<div class="col-7">
+				<h3><b>Тур-треки</b></h3>
+				<p>Выбери себе путешествие по душе <br> и отправляйся на поиски приключений <br>по памятным местам ямщиков.</p>
+				<a href="tour.php"><button class="btn btn-circ"><svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M9 7L1 7" stroke="white"/>
+				<path d="M4.5 1L1 7L4.5 12.5" stroke="white"/>
+				</svg>
+				</button></a>
+			</div>
+			<div class="col-5 d-flex justify-content-start">
+				<img src="img/tour.png" class="mx-img">
+			</div>
+		</div>
+		<div class="row mb-4">
+			<div class="col-5 d-flex justify-content-end">
+				<img src="img/cafe.png" class="mx-img">
+			</div>
+			<div class="col-7">
+				<h3><b>Аренда кафе</b></h3>
+				<p>Празднуй свой день рождение <br>или любой другой праздник <br> в тематическом кафе подворья</p>
+				<a href="cafe.php"><button class="btn btn-circ"><img src="img/arrow.png"></button></a>
+			</div>
+		</div>
 	</div>
+	<hr>
 	<!-- Гостинница -->
 	<div class="container-fluid mt-5">
-		<div class="row">
-			<div class="col-7">
+		<div class="row align-middle">
+			<div class="col-1"></div>
+			<div class="col-6">
 				<h1>Гостинница</h1>
 				<p>Посети наш тематический отель и почувствуй как жили ямщики. Выбери подходящий для себя номер и отдыхай в свое удовольствие. </p>
 				<a href="hotel.php"><button class="btn">Перейти</button></a>
 			</div>
 			<div class="col-5 d-flex justify-content-end" style="padding-right: 0;">
-				<img src="img/budk.png" width="240">
+				<img src="img/budk.png" width="75%">
 			</div>
 		</div>
-		<div class="row" style="position: relative; z-index: 999; top: -50px; margin-bottom: -50px;">
+		<!-- <div class="row" style="position: relative; z-index: 999; top: -50px; margin-bottom: -50px;">
 			<img src="img/fencc.png"  style="padding: 0;">
-		</div>
+		</div> -->
 	</div>
 	<!-- Футер -->
 	<?php require "footer.php"; ?>
