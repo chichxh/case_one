@@ -16,7 +16,7 @@
 	<?php require "header.php"; ?>
 	<div class="container">
 		<div class="row">
-			<h1><b>Лошадиная ферма</b></h1>
+			<h1><b>Horse-парк</b></h1>
 			<p class="font-jt">Орджоникидзе 53</p>
 		</div>
 		<div class="row mt-5 justify-content-center">
@@ -57,6 +57,24 @@
 			</div>
 			<div class="col-4 text-center">
 				<h3>Покататься на ямщицских санях</h3>
+			</div>
+		</div>
+		<hr>
+		<div class="row mb-5">
+			<div class="col-6">
+				<h1><b>Прайс</b></h1>
+				<p><b>500</b> руб - покататься на санях/телеге <br>
+					<b>100</b> руб - покормить <br>
+					<b>400</b> руб - расчесать и почистить
+				</p>
+			</div>
+			<div class="col-6">
+				<h1><b>Работа</b></h1>
+				<p><b>С пон - пят</b> <br>
+					10:00 - 15:00 <br>
+					<b>С субб - воскр</b> <br>
+					Выходной
+				</p>
 			</div>
 		</div>
 	</div>
