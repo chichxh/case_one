@@ -24,7 +24,7 @@
 				<img src="img/h1.png" width="75%">
 			</div>
 			<div class="col-4 text-center align-middle">
-				<h3>Наша ферма имеет более 100 лошадей. За каждым ведется бережный уход и внимание</h3>
+				<p>Наша ферма имеет более 100 лошадей. За каждым ведется бережный уход и внимание</p>
 			</div>
 		</div>
 		<div class="row mt-3 justify-content-center">
@@ -40,12 +40,12 @@
 				<img src="img/h4.png" width="75%">
 			</div>
 			<div class="col-4 text-center">
-				<h3 class=" d-flex align-middle">Что вы можете на нашей ферме?</h3>
+				<p class=" d-flex align-middle">Что вы можете на нашей ферме?</p>
 			</div>
 		</div>
 		<div class="row mt-3 justify-content-center">
 			<div class="col-4 text-center">
-				<h3>Поближе рассмотреть и даже покормить коня</h3>
+				<p>Поближе рассмотреть и даже покормить коня</p>
 			</div>
 			<div class="col-4 text-end">
 				<img src="img/h5.png" width="75%">
@@ -56,7 +56,7 @@
 				<img src="img/h6.png" width="75%">
 			</div>
 			<div class="col-4 text-center">
-				<h3>Покататься на ямщицских санях</h3>
+				<p>Покататься на ямщицских санях</p>
 			</div>
 		</div>
 		<hr>
