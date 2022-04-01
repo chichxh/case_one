@@ -4,10 +4,9 @@ $conn = new mysqli($host, $user, $password, $database);
 
 session_start();
 $id = $_SESSION['id'];
-$name = $_SESSION['name'];
-$surname = $_SESSION['surname'];
-$email = $_SESSION['email'];
-$achId = $_SESSION['achId'];
+$query = mysqli_query($link,"SELECT * FROM users WHERE id = $id");
+$data = mysqli_fetch_assoc($query);
+$achId = $data['achId'];
 $achIdArray = explode(",", $achId);
 
 if(isset($_POST['qr'])) {

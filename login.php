@@ -41,6 +41,7 @@ if(isset($_POST['loginSub'])) {
     <script src="qr-scanner.umd.min.js"></script>
  </head>
  <body>
+    <?php require "header.php"; ?>
     <div class="container">
         <div class="row text-center mt-5">
             <h1><b>Войти</b></h1>
@@ -56,6 +57,7 @@ if(isset($_POST['loginSub'])) {
                 <div class="row mb-3 px-3 text-center">
                     <button type="submit" class="btn btn-spec" name="loginSub">Войти</button>
                 </div>
+                <button class="btn">Регистрация</button>
             </form>
         </div>
     </div>

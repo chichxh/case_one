@@ -29,36 +29,54 @@ $query = mysqli_query($link,"SELECT * FROM achievments");
 	<script src="qr-scanner.umd.min.js"></script>
 </head>
 <body>
-	<div class="wrap">
-	    <div>
-			<video style="display: none" id="videoElem"></video>
-		    <div id="canvas"></div> <br>
-		    <p>Поднесите свое устройство с QR-кодом к камере</p>
-		    <br>
-		</div>
-
-	    <!-- post requset -->
-	    <div class="ms">
-	    	<form>
-			    <input type="text" name="qr" class="input">
-			    <!-- <input type="submit" id="send_button" formmethod="post" disabled="true" class="btn-spec"> -->
-			    <button type="submit" id="send_button" formmethod="post" disabled="true" class="btn-spec">Подтвердить код</button>
-			</form>
-			<button id="start_button" disabled="true" onclick="startScan()" class="btn-spec">Повторное сканирование</button>
-	    </div>
-	</div>
-
-	<div class="container">
+	<?php require "header.php"; ?>
+	<div class="container font-jt">
 		<div class="row">
-			<p>Сделаны ачивки: <?php echo $achId; ?></p>
+			<h1 class="font-mnt"><b>Мои достижения</b></h1>
+			<p class="">Выполняй задания, чтобы получить памятные призы от нас</p>
+		</div>
+		<div class="row mt-3">
+			<p>Достижения совершенные мной: <?php echo $achId; ?></p>
 		</div>
 		<div class="row">
+			<button id="btnCam" class="btn" onclick="openCam()">Начать сканирование QR-кодов</button>
+		</div>
+		<div class="row">
+			<div id="cam" style="display: none;">
+			    <div>
+					<video style="display: none" id="videoElem" class="mt-3"></video>
+				    <div id="canvas"></div> <br>
+				    <p>Если вы нашли спрятанный QR-код, то наведите камеру на него</p>
+				    <br>
+				</div>
+			    <div>
+			    	<form>
+					    <input type="text" name="qr" class="input" style="display: none;">
+					    <!-- <input type="submit" id="send_button" formmethod="post" disabled="true" class="btn-spec"> -->
+					    <button type="submit" id="send_button" formmethod="post" disabled="true" class="btn">Отсканировать!</button>
+					</form>
+					<button id="start_button" disabled="true" onclick="startScan()" class="btn mt-3">Повторное сканирование</button>
+			    </div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			let cam = document.getElementById('cam')
+			let btnCam = document.getElementById('btnCam')
+			function openCam() {
+				cam.style.display = 'block'
+				btnCam.style.display = 'none'
+			}
+		</script>
+		<div class="row mt-5">
+			<h2>Все достижения</h2>
 			<?php while ($row = mysqli_fetch_array($query)): ?>
 				<p><?= $row['id']; ?> <?= $row['achievment']; ?></p>
 				<br>
 			<?php endwhile; ?>
 		</div>
 	</div>
+
 
 	<script>
 		let response_text;
