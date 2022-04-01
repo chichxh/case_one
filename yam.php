@@ -25,25 +25,47 @@
 		</div>
 		<div class="row">
 			<div class="col-6">
-				<p>Они возили почту по селам Хангаласского района обеспечивая что то по всему Хангасскому району</p>
+				<p>Сначала они возили почту, а позже позволили разивиться нашей Республике, району и культуре.</p>
 			</div>
 		</div>
 		<hr>
 		<div class="row justify-content-center">
-			<h1 class="text-center">Символы ямщиков</h1>
-			<div class="col-6 text-center">
-				<p>Ямщики передвегались на санях с 3 конями</p>
-				<p>Важным атрибутом Ямщиков являлись колокольчики</p>
-				<p>Они помогали отпугивать хищников и предупреждали людей о приезде ямщика</p>
+			<h1 class="text-center">Кто они такие?</h1>
+		</div>
+		<div class="row mt-5 justify-content-center">
+			<div class="col-4 text-end">
+				<img src="img/y1.png" width="75%">
+			</div>
+			<div class="col-4 text-start align-middle">
+				<h3>Ямщики передвигались на санях с 3 конями</h3>
+			</div>
+		</div>
+		<div class="row mt-3 justify-content-center">
+			<div class="col-4 text-end align-middle">
+				<h3>Важным атрибутом Ямщиков являлись колокольчики</h3>
+			</div>
+			<div class="col-4 text-start">
+				<img src="img/y2.png" width="75%">
+			</div>
+		</div>	
+		<div class="row mt-3 justify-content-center">
+			<div class="col-4 text-end">
+				<img src="img/y3.png" width="75%">
+			</div>
+			<div class="col-4 text-start align-middle">
+				<h3>Они помогали отпугивать хищников и предупреждали людей о приезде ямщика</h3>
 			</div>
 		</div>
 		<hr>
 		<div class="d-flex justify-content-start mb-5">
 			<div class="col-9 font-mnt">
-				<h1>Ямщики являлись</h1>
-				<h1>строителями</h1>
-				<h1>сегодняшних</h1>
+				<h1><b>Ямщики являлись</b></h1>
+				<h1><b>"строителями"</b></h1>
+				<h1><b>сегодняшних</b></h1>
 				<div class="d-flex justify-content-start"><h1><b>дорог</b></h1><img src="img/strR.png"></div>
+			</div>
+			<div class="col-3">
+				<img src="img/y4.png">
 			</div>
 		</div>
 	</div>
